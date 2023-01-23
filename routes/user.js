@@ -16,6 +16,8 @@ const { userGet,
 
 const router = Router();
 
+console.log('Entrada router.....',router);
+
 
 //router.get('/',userGet);
 
