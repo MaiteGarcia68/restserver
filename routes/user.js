@@ -16,10 +16,7 @@ const { userGet,
 
 const router = Router();
 
-console.log('Entrada router.....',router);
-
-
-//router.get('/',userGet);
+router.get('/',userGet);
 
 router.post('/',[
      check('nombre', 'El nombre es obligatorio').not().isEmpty(),
