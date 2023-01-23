@@ -36,7 +36,6 @@ class Server {
         // Carpeta Public
         this.app.use( express.static('public') );
 
-
     }
 
     routes() {

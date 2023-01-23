@@ -16,7 +16,6 @@ const { userGet,
 
 const router = Router();
 
-
 router.get('/',userGet);
 
 router.post('/',[
