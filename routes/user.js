@@ -17,7 +17,7 @@ const { userGet,
 const router = Router();
 
 
-router.get('/',userGet);
+//router.get('/',userGet);
 
 router.post('/',[
      check('nombre', 'El nombre es obligatorio').not().isEmpty(),
