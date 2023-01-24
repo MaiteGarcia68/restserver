@@ -67,15 +67,16 @@ const userPut = async(req, res = response) => {
 const userDelete = async(req, res = response) => {
 
     const id = req.params.id;
-    console.log('Estoy en userDelete - params',req.params);
 
     // Borrado Fisico
     //const usuario = await Usuario.findByIdAndDelete(id);
 
     // Borrado Lógico con cambio de estado = false
     const usuario = await Usuario.findByIdAndUpdate( id, {estado:false}, {new:true});
+    const usuarioAuth =  req.usuarioAuth;
     
-    res.json(usuario);
+    res.json({usuario, usuarioAuth});
+    
 }
 
 const userPatch = (req, res = response) => {
