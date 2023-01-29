@@ -1,0 +1,24 @@
+
+
+// instalar paquetes
+npm i colors
+npm i yargs    -- parse optstrings
+
+
+// instalar paquetes con version
+npm i colors@1.0.0
+ 
+// Actualiza dependencias
+npm update
+
+
+
+// Solo para instalar en dev NO produccion
+npm install nodemon --save-dev
+
+// Desinstalar
+npm uninstall nodemon
+
+// instalar lo que indica las depedencias la app
+npm install
+
